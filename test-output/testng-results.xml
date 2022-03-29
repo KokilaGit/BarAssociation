@@ -8,30 +8,30 @@
       <![CDATA[Launching Google Chrome Driver  for this test]]>
     </line>
     <line>
-      <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220328195310.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220328195310.png' height='100' width='100'/> </a>]]>
+      <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220328221329.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220328221329.png' height='100' width='100'/> </a>]]>
     </line>
     <line>
-      <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220328195331.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220328195331.png' height='100' width='100'/> </a>]]>
+      <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220328221350.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220328221350.png' height='100' width='100'/> </a>]]>
     </line>
     <line>
-      <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328195342.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328195342.png' height='100' width='100'/> </a>]]>
+      <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328221401.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328221401.png' height='100' width='100'/> </a>]]>
     </line>
     <line>
-      <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328195353.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328195353.png' height='100' width='100'/> </a>]]>
+      <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328221411.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328221411.png' height='100' width='100'/> </a>]]>
     </line>
     <line>
-      <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328195403.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328195403.png' height='100' width='100'/> </a>]]>
+      <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328221422.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328221422.png' height='100' width='100'/> </a>]]>
     </line>
     <line>
       <![CDATA[Driver Closed After Testing]]>
     </line>
   </reporter-output>
-  <suite name="Suite1" duration-ms="57166" started-at="2022-03-28T19:53:07 CDT" finished-at="2022-03-28T19:54:04 CDT">
+  <suite name="Suite1" duration-ms="56787" started-at="2022-03-28T22:13:25 CDT" finished-at="2022-03-28T22:14:22 CDT">
     <groups>
     </groups>
-    <test name="UnitTesting" duration-ms="57166" started-at="2022-03-28T19:53:07 CDT" finished-at="2022-03-28T19:54:04 CDT">
+    <test name="UnitTesting" duration-ms="56787" started-at="2022-03-28T22:13:25 CDT" finished-at="2022-03-28T22:14:22 CDT">
       <class name="com.contracosta.barassociation.MemberForm">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.contracosta.barassociation.MemberForm@4671e53b]" name="setUp" is-config="true" duration-ms="1914" started-at="2022-03-28T19:53:05 CDT" finished-at="2022-03-28T19:53:07 CDT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.contracosta.barassociation.MemberForm@4671e53b]" name="setUp" is-config="true" duration-ms="3237" started-at="2022-03-28T22:13:22 CDT" finished-at="2022-03-28T22:13:25 CDT">
           <reporter-output>
             <line>
               <![CDATA[This test verifies the current selenium compatibility with TestNG by launching the chrome driver]]>
@@ -41,7 +41,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest(java.util.HashMap)[pri:1, instance:com.contracosta.barassociation.MemberForm@4671e53b]" name="loginTest" duration-ms="2871" started-at="2022-03-28T19:53:07 CDT" data-provider="create" finished-at="2022-03-28T19:53:10 CDT">
+        <test-method status="PASS" signature="loginTest(java.util.HashMap)[pri:1, instance:com.contracosta.barassociation.MemberForm@4671e53b]" name="loginTest" duration-ms="3604" started-at="2022-03-28T22:13:26 CDT" data-provider="create" finished-at="2022-03-28T22:13:29 CDT">
           <params>
             <param index="0">
               <value>
@@ -51,25 +51,25 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220328195310.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220328195310.png' height='100' width='100'/> </a>]]>
+              <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220328221329.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220328221329.png' height='100' width='100'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="contactForm(java.util.HashMap)[pri:2, instance:com.contracosta.barassociation.MemberForm@4671e53b]" name="contactForm" duration-ms="20717" started-at="2022-03-28T19:53:10 CDT" data-provider="memberInfo" finished-at="2022-03-28T19:53:31 CDT">
+        <test-method status="PASS" signature="contactForm(java.util.HashMap)[pri:2, instance:com.contracosta.barassociation.MemberForm@4671e53b]" name="contactForm" duration-ms="20380" started-at="2022-03-28T22:13:30 CDT" data-provider="memberInfo" finished-at="2022-03-28T22:13:50 CDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Zip=19804, Email=contracosta@abc19.com, EventBroadcastPrefference=no, Website=www.avf.com, NotesText=This is a sample message for private notes., Gender=Male, Salutation=Judge, PublishPhoneOnline=yes, StudentMentor=yes, PublishNamePrint=no, MemberPwd=high12, MemberId=165489, PublishBioOnline=no, Phone1=456-763-1097, Phone2=123-456-7890, PublishPhotoPrint=yes, DOB=03/18/1990, PublishEmailPrint=yes, AttorneyMentor=no, PublishNameOnline=yes, Cell=708-567-2146, CommitteBroadcastPrefference=yes, PublishEmailOnline=no, MailingOption=yes, FirstName=Michael, PublishPhonePrint=yes, Address2=Suite101, MentorToStudent=yes, ContactPrefference=email, Address1=15,abc street, City=Wilmington, NickName=Mike, IMIS=Test, Ethnicity=Latino, Suffix=Esq., PublishPhotoOnline=no, State=Delaware, MentorToAttorney=no, Country=United States, MagazinePrefference=mail, LastName=Bob, Fax=543-189-9065, Initial=R, Attorney=Yes}]]>
+                <![CDATA[{Zip=19804, Email=contracosta@abc19.com, EventBroadcastPrefference=no, Website=www.avf.com, NotesText=This is a sample message for private notes., Gender=Male, Salutation=Judge, PublishPhoneOnline=yes, StudentMentor=yes, PublishNamePrint=no, MemberPwd=high12, MemberId=165489, PublishBioOnline=no, Phone1=456-763-1097, Phone2=123-456-7890, PublishPhotoPrint=yes, DOB=03/18/1990, PublishEmailPrint=yes, AttorneyMentor=no, PublishNameOnline=yes, Cell=708-567-2146, CommitteBroadcastPrefference=yes, PublishEmailOnline=no, MailingOption=yes, FirstName=Michael, PublishPhonePrint=yes, Address2=Suite101, MentorToStudent=yes, ContactPrefference=email, Address1=15,abc street, City=Wilmington, NickName=Mike, IMIS=Test, Ethnicity=Latino, Suffix=Esq., PublishPhotoOnline=no, State=Delaware, PublishBioPrint=yes, MentorToAttorney=no, Country=United States, MagazinePrefference=mail, LastName=Bob, Fax=543-189-9065, Initial=R, Attorney=Yes}]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220328195331.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220328195331.png' height='100' width='100'/> </a>]]>
+              <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220328221350.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220328221350.png' height='100' width='100'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- contactForm -->
-        <test-method status="FAIL" signature="memberCategory()[pri:3, instance:com.contracosta.barassociation.MemberForm@4671e53b]" name="memberCategory" duration-ms="10062" started-at="2022-03-28T19:53:32 CDT" finished-at="2022-03-28T19:53:42 CDT">
+        <test-method status="FAIL" signature="memberCategory()[pri:3, instance:com.contracosta.barassociation.MemberForm@4671e53b]" name="memberCategory" duration-ms="10044" started-at="2022-03-28T22:13:51 CDT" finished-at="2022-03-28T22:14:01 CDT">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#rptrMembership_optMem_9"}
@@ -78,8 +78,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MacBook-Pro.local', ip: 'fd91:beb9:3063:4b36:10c5:a5c8:7725:e43b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_311'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:55992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 542506a435f17fc665bdb7058bc1b836
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:50625}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee7b23bb1435668d2826f85f892e86df
 *** Element info: {Using=id, value=rptrMembership_optMem_9}]]>
             </message>
             <full-stacktrace>
@@ -89,8 +89,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MacBook-Pro.local', ip: 'fd91:beb9:3063:4b36:10c5:a5c8:7725:e43b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_311'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:55992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 542506a435f17fc665bdb7058bc1b836
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:50625}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee7b23bb1435668d2826f85f892e86df
 *** Element info: {Using=id, value=rptrMembership_optMem_9}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -107,7 +107,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.ja
 at org.openqa.selenium.By$ById.findElement(By.java:188)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at com.contracosta.pom.MembershipCategories.<init>(MembershipCategories.java:14)
-at com.contracosta.barassociation.MemberForm.memberCategory(MemberForm.java:169)
+at com.contracosta.barassociation.MemberForm.memberCategory(MemberForm.java:170)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -141,11 +141,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
-              <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328195342.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328195342.png' height='100' width='100'/> </a>]]>
+              <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328221401.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328221401.png' height='100' width='100'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- memberCategory -->
-        <test-method status="FAIL" signature="languageCategory()[pri:4, instance:com.contracosta.barassociation.MemberForm@4671e53b]" name="languageCategory" duration-ms="10030" started-at="2022-03-28T19:53:43 CDT" finished-at="2022-03-28T19:53:53 CDT">
+        <test-method status="FAIL" signature="languageCategory()[pri:4, instance:com.contracosta.barassociation.MemberForm@4671e53b]" name="languageCategory" duration-ms="10011" started-at="2022-03-28T22:14:01 CDT" finished-at="2022-03-28T22:14:11 CDT">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#ucLanguage_chkLanguage_15"}
@@ -154,8 +154,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MacBook-Pro.local', ip: 'fd91:beb9:3063:4b36:10c5:a5c8:7725:e43b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_311'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:55992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 542506a435f17fc665bdb7058bc1b836
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:50625}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee7b23bb1435668d2826f85f892e86df
 *** Element info: {Using=id, value=ucLanguage_chkLanguage_15}]]>
             </message>
             <full-stacktrace>
@@ -165,8 +165,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MacBook-Pro.local', ip: 'fd91:beb9:3063:4b36:10c5:a5c8:7725:e43b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_311'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:55992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 542506a435f17fc665bdb7058bc1b836
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:50625}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee7b23bb1435668d2826f85f892e86df
 *** Element info: {Using=id, value=ucLanguage_chkLanguage_15}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -183,7 +183,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.ja
 at org.openqa.selenium.By$ById.findElement(By.java:188)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at com.contracosta.pom.LanguageSelection.<init>(LanguageSelection.java:17)
-at com.contracosta.barassociation.MemberForm.languageCategory(MemberForm.java:177)
+at com.contracosta.barassociation.MemberForm.languageCategory(MemberForm.java:178)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -217,11 +217,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
-              <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328195353.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328195353.png' height='100' width='100'/> </a>]]>
+              <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328221411.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328221411.png' height='100' width='100'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- languageCategory -->
-        <test-method status="FAIL" signature="paymentCategory()[pri:5, instance:com.contracosta.barassociation.MemberForm@4671e53b]" name="paymentCategory" duration-ms="10025" started-at="2022-03-28T19:53:53 CDT" finished-at="2022-03-28T19:54:03 CDT">
+        <test-method status="FAIL" signature="paymentCategory()[pri:5, instance:com.contracosta.barassociation.MemberForm@4671e53b]" name="paymentCategory" duration-ms="10048" started-at="2022-03-28T22:14:12 CDT" finished-at="2022-03-28T22:14:22 CDT">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#optPayType_3"}
@@ -230,8 +230,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MacBook-Pro.local', ip: 'fd91:beb9:3063:4b36:10c5:a5c8:7725:e43b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_311'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:55992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 542506a435f17fc665bdb7058bc1b836
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:50625}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee7b23bb1435668d2826f85f892e86df
 *** Element info: {Using=id, value=optPayType_3}]]>
             </message>
             <full-stacktrace>
@@ -241,8 +241,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MacBook-Pro.local', ip: 'fd91:beb9:3063:4b36:10c5:a5c8:7725:e43b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_311'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:55992}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 542506a435f17fc665bdb7058bc1b836
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:50625}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee7b23bb1435668d2826f85f892e86df
 *** Element info: {Using=id, value=optPayType_3}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -259,7 +259,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.ja
 at org.openqa.selenium.By$ById.findElement(By.java:188)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at com.contracosta.pom.PaymentPage.<init>(PaymentPage.java:19)
-at com.contracosta.barassociation.MemberForm.paymentCategory(MemberForm.java:185)
+at com.contracosta.barassociation.MemberForm.paymentCategory(MemberForm.java:186)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -293,11 +293,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
-              <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328195403.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328195403.png' height='100' width='100'/> </a>]]>
+              <![CDATA[<a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328221422.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220328221422.png' height='100' width='100'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- paymentCategory -->
-        <test-method status="PASS" signature="closeUp()[pri:0, instance:com.contracosta.barassociation.MemberForm@4671e53b]" name="closeUp" is-config="true" duration-ms="167" started-at="2022-03-28T19:54:04 CDT" finished-at="2022-03-28T19:54:04 CDT">
+        <test-method status="PASS" signature="closeUp()[pri:0, instance:com.contracosta.barassociation.MemberForm@4671e53b]" name="closeUp" is-config="true" duration-ms="177" started-at="2022-03-28T22:14:22 CDT" finished-at="2022-03-28T22:14:22 CDT">
           <reporter-output>
             <line>
               <![CDATA[Driver Closed After Testing]]>

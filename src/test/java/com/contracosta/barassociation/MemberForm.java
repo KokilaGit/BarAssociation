@@ -31,64 +31,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class MemberForm extends DriverSetUp {
 
-	String ExcelFilePath = new File(System.getProperty("user.dir")).getAbsolutePath() + "/src/test/resources";
-	String fileName = "TestData.xlsx";
-
-	//@Test(priority = 1)
-	/*
-	 * public void loginTest() throws InterruptedException {
-	 * 
-	 * // Read test data from Excel // Create an object of File class to open xlsx
-	 * file
-	 * 
-	 * File file = new File(ExcelFilePath + "/" + fileName); try {
-	 * 
-	 * // Create an object of FileInputStream class to read excel file
-	 * 
-	 * FileInputStream inputStream = new FileInputStream(file);
-	 * 
-	 * // Find the file extension by splitting file name in substring and getting
-	 * only // extension name
-	 * 
-	 * String fileExtensionName = fileName.substring(fileName.indexOf("."));
-	 * Workbook TestDataWorkBook = null;
-	 * 
-	 * // Check condition if the file is xlsx file
-	 * 
-	 * if (fileExtensionName.equals(".xlsx")) {
-	 * 
-	 * // If it is xlsx file then create object of XSSFWorkbook class
-	 * 
-	 * TestDataWorkBook = new XSSFWorkbook(inputStream);
-	 * 
-	 * }
-	 * 
-	 * // Check condition if the file is xls file
-	 * 
-	 * else if (fileExtensionName.equals(".xls")) {
-	 * 
-	 * // If it is xls file then create object of HSSFWorkbook class
-	 * 
-	 * TestDataWorkBook = new HSSFWorkbook(inputStream); }
-	 * 
-	 * Sheet loginSheet = TestDataWorkBook.getSheet("Login"); // Find number of rows
-	 * in excel file
-	 * 
-	 * int rowCount = loginSheet.getLastRowNum() - loginSheet.getFirstRowNum(); for
-	 * (int i = 1; i < rowCount + 1; i++) { LoginPage login = new LoginPage(driver);
-	 * 
-	 * String uname = loginSheet.getRow(i).getCell(0).getStringCellValue(); String
-	 * passwd = loginSheet.getRow(i).getCell(1).getStringCellValue();
-	 * login.setUserName(uname); login.setPassword(passwd); login.clickLogin();
-	 * login.clickLogout(); Thread.sleep(2000); }
-	 * 
-	 * } catch (IOException e) { e.printStackTrace(); }
-	 * 
-	 * }
-	 */
-	
-		
-	
 	@Test(dataProvider = "create",dataProviderClass= DataProviderMemberForm.class,priority = 1)
 	public void loginTest(HashMap<String, String> data) throws InterruptedException {
 
