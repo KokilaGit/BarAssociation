@@ -8,7 +8,6 @@
     <classes>
       <class name="com.contracosta.barassociation.MemberForm">
         <methods>
-          <include name="contactForm"/>
           <include name="setUp"/>
           <include name="closeUp"/>
           <include name="languageCategory"/>

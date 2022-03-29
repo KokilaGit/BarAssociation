@@ -3,11 +3,13 @@ package com.contracosta.barassociation;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.HashMap;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.contracosta.pom.AddMemberContact;
@@ -32,121 +34,134 @@ public class MemberForm extends DriverSetUp {
 	String ExcelFilePath = new File(System.getProperty("user.dir")).getAbsolutePath() + "/src/test/resources";
 	String fileName = "TestData.xlsx";
 
-	@Test(priority = 1)
-	public void loginTest() throws InterruptedException {
+	//@Test(priority = 1)
+	/*
+	 * public void loginTest() throws InterruptedException {
+	 * 
+	 * // Read test data from Excel // Create an object of File class to open xlsx
+	 * file
+	 * 
+	 * File file = new File(ExcelFilePath + "/" + fileName); try {
+	 * 
+	 * // Create an object of FileInputStream class to read excel file
+	 * 
+	 * FileInputStream inputStream = new FileInputStream(file);
+	 * 
+	 * // Find the file extension by splitting file name in substring and getting
+	 * only // extension name
+	 * 
+	 * String fileExtensionName = fileName.substring(fileName.indexOf("."));
+	 * Workbook TestDataWorkBook = null;
+	 * 
+	 * // Check condition if the file is xlsx file
+	 * 
+	 * if (fileExtensionName.equals(".xlsx")) {
+	 * 
+	 * // If it is xlsx file then create object of XSSFWorkbook class
+	 * 
+	 * TestDataWorkBook = new XSSFWorkbook(inputStream);
+	 * 
+	 * }
+	 * 
+	 * // Check condition if the file is xls file
+	 * 
+	 * else if (fileExtensionName.equals(".xls")) {
+	 * 
+	 * // If it is xls file then create object of HSSFWorkbook class
+	 * 
+	 * TestDataWorkBook = new HSSFWorkbook(inputStream); }
+	 * 
+	 * Sheet loginSheet = TestDataWorkBook.getSheet("Login"); // Find number of rows
+	 * in excel file
+	 * 
+	 * int rowCount = loginSheet.getLastRowNum() - loginSheet.getFirstRowNum(); for
+	 * (int i = 1; i < rowCount + 1; i++) { LoginPage login = new LoginPage(driver);
+	 * 
+	 * String uname = loginSheet.getRow(i).getCell(0).getStringCellValue(); String
+	 * passwd = loginSheet.getRow(i).getCell(1).getStringCellValue();
+	 * login.setUserName(uname); login.setPassword(passwd); login.clickLogin();
+	 * login.clickLogout(); Thread.sleep(2000); }
+	 * 
+	 * } catch (IOException e) { e.printStackTrace(); }
+	 * 
+	 * }
+	 */
+	
 		
-		// Read test data from Excel
-		// Create an object of File class to open xlsx file
+	
+	@Test(dataProvider = "create",dataProviderClass= DataProviderMemberForm.class,priority = 1)
+	public void loginTest(HashMap<String, String> data) throws InterruptedException {
 
-		File file = new File(ExcelFilePath + "/" + fileName);
-		try {
+		LoginPage login = new LoginPage(driver);
 
-			// Create an object of FileInputStream class to read excel file
-
-			FileInputStream inputStream = new FileInputStream(file);
-
-			// Find the file extension by splitting file name in substring and getting only
-			// extension name
-
-			String fileExtensionName = fileName.substring(fileName.indexOf("."));
-			Workbook TestDataWorkBook = null;
-
-			// Check condition if the file is xlsx file
-
-			if (fileExtensionName.equals(".xlsx")) {
-
-				// If it is xlsx file then create object of XSSFWorkbook class
-
-				TestDataWorkBook = new XSSFWorkbook(inputStream);
-
-			}
-
-			// Check condition if the file is xls file
-
-			else if (fileExtensionName.equals(".xls")) {
-
-				// If it is xls file then create object of HSSFWorkbook class
-
-				TestDataWorkBook = new HSSFWorkbook(inputStream);
-			}
-
-			Sheet loginSheet = TestDataWorkBook.getSheet("Login");
-			// Find number of rows in excel file
-
-			int rowCount = loginSheet.getLastRowNum() - loginSheet.getFirstRowNum();
-			for (int i = 1; i < rowCount + 1; i++) {
-				LoginPage login = new LoginPage(driver);
-
-				String uname = loginSheet.getRow(i).getCell(0).getStringCellValue();
-				String passwd = loginSheet.getRow(i).getCell(1).getStringCellValue();
-				login.setUserName(uname);
-				login.setPassword(passwd);
-				login.clickLogin();
-				login.clickLogout();
-				Thread.sleep(2000);
-			}
-
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		login.setUserName(data.get("UserName"));
+		login.setPassword(data.get("Password"));
+		login.clickLogin();
 
 	}
 
-	@Test(priority = 2)
-	public void contactForm() throws InterruptedException {
+	@Test(dataProvider = "memberInfo",dataProviderClass= DataProviderMemberForm.class,priority = 2)
+	public void contactForm(HashMap<String, String> data) throws InterruptedException {
 
 		// build()- used to compile all the actions into a single step
 
 		AddMemberContact contact = new AddMemberContact(driver);
-		contact.setSalutationDropdown("Judge");
-		contact.setFirstNameText("Michael");
-		contact.setInitialTxt("R");
-		contact.setLastNameText("Bob");
-		contact.setnickNameText("Mike");
-		contact.setSuffixDropdown("Esq.");
-		contact.setdobMonthDropdown("03");
-		contact.setdobDateDropdown("18");
-		contact.setdobYearDropdown("1990");
-		contact.setEthnicity("Latino");
-		contact.setGenderDropDown("Male");
-		contact.setphone1Part1("456");
-		contact.setphone1Part2("763");
-		contact.setphone1Part3("1097");
-		contact.setphone2Part1("123");
-		contact.setphone2Part2("456");
-		contact.setphone2Part3("7890");
-		contact.setcellPart1("708");
-		contact.setcellPart2("567");
-		contact.setcellPart3("2146");
-		contact.setfaxPart1("543");
-		contact.setfaxPart2("189");
-		contact.setfaxPart3("9065");
-		contact.setEmailText("contracosta@abc18.com");
-		contact.setAddress1Text("15,abc street");
-		contact.setAddress2Text("Suite101");
-		contact.setCityText("Wilmington");
-		// Thread.sleep(3000);
-		contact.setStateDropDown("Delaware");
-		// Thread.sleep(3000);
-		contact.setZipcodeText("19804");
-		contact.setwebsiteText("www.avf.com");
-		contact.setAttorneyYesRadioBtn();
-		contact.setpwdText("high12");
-		contact.setConactTypeEmailRadioBtn();
-		contact.setMagazineRadioBtn();
-		// Thread.sleep(3000);
-		contact.setEventBroadcastRadioBtn();
-		contact.setCommitteBroadcastRadioBtn();
-		contact.setMailingOptionRadioBtn();
+		contact.setSalutationDropdown(data.get("Salutation"));
+		contact.setFirstNameText(data.get("FirstName"));
+		contact.setInitialTxt(data.get("Initial"));
+		contact.setLastNameText(data.get("LastName"));
+		contact.setnickNameText(data.get("NickName"));
+		contact.setSuffixDropdown(data.get("Suffix"));
+		contact.setDateOfBirth(data.get("DOB"));
+		contact.setEthnicity(data.get("Ethnicity"));
+		contact.setGenderDropDown(data.get("Gender"));
+		contact.setCountryDropDown(data.get("Country"));
+		contact.setPhone1(data.get("Phone1"));
+		contact.setPhone2(data.get("Phone2"));
+		contact.setCell(data.get("Cell"));
+		contact.setFax(data.get("Fax"));
+		contact.setEmailText(data.get("Email"));
+		contact.setAddress1Text(data.get("Address1"));
+		contact.setAddress2Text(data.get("Address2"));
+		contact.setCityText(data.get("City"));
+		contact.setStateDropDown(data.get("State"));
+		contact.setZipcodeText(data.get("Zip"));
+		contact.setwebsiteText(data.get("Website"));
+		contact.setAttorney(data.get("Attorney"));
+		
+		contact.setpwdText(data.get("MemberPwd"));
+		contact.setmemberId(data.get("MemberId"));
+		contact.setimisTxt(data.get("IMIS"));
+		contact.setnotesTxt(data.get("NotesText"));
+		
+		contact.setContactPrefference(data.get("ContactPrefference"));
+		contact.setMagazinePrefference(data.get("MagazinePrefference"));
+		contact.setEventBroadcast(data.get("EventBroadcastPrefference"));
+		contact.setCommitteBroadcast(data.get("CommitteBroadcastPrefference"));
+		contact.setMailingList(data.get("MailingOption"));
+		contact.setPublishNameOnlinechbx(data.get("PublishNameOnline"));
+		contact.setPublishNamePrintchbx(data.get("PublishNamePrint"));
+		contact.setPublishEmailOnlinechbx(data.get("PublishEmailOnline"));
+		contact.setPublishEmailPrintchbx(data.get("PublishEmailPrint"));
+		contact.setPublishPhoneOnlinechbx(data.get("PublishPhoneOnline"));
+		contact.setPublishPhonePrintchbx(data.get("PublishPhonePrint"));
+		contact.setPublishPhotoOnlinechbx(data.get("PublishPhotoOnline"));
+		contact.setPublishPhotoPrintchbx(data.get("PublishPhotoPrint"));
+		contact.setPublishBioOnlinechbx(data.get("PublishBioOnline"));
+		contact.setPublishBioPrintchbx(data.get("PublishBioPrint"));
+		contact.setStudentMentorCheckBox(data.get("StudentMentor"));
+		contact.setAttWantMentorChbx(data.get("AttorneyMentor"));
+		contact.setMentorToStuChbx(data.get("MentorToStudent"));
+		contact.setMenToAttorneyChbx(data.get("MentorToAttorney"));
+		contact.setmoduleField("125abhy");
 		contact.setFirmNameRadioBtn();
 		contact.setDateText("02/15/8888");
-		// Thread.sleep(3000);
 		contact.setstateAdmittedText();
-		// Thread.sleep(3000);
 		contact.setdateAdmittedText("03/18/1111");
+		Thread.sleep(5000);
 		contact.setNextBtn();
 
-		Thread.sleep(5000);
+		
 
 	}
 
