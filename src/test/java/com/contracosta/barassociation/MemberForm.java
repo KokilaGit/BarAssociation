@@ -1,15 +1,8 @@
 package com.contracosta.barassociation;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+
 import java.util.HashMap;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.contracosta.pom.AddMemberContact;
@@ -17,17 +10,6 @@ import com.contracosta.pom.LanguageSelection;
 import com.contracosta.pom.LoginPage;
 import com.contracosta.pom.MembershipCategories;
 import com.contracosta.pom.PaymentPage;
-
-import org.apache.poi.hssf.usermodel.HSSFCell;
-import org.apache.poi.hssf.usermodel.HSSFRow;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class MemberForm extends DriverSetUp {
 
@@ -72,6 +54,7 @@ public class MemberForm extends DriverSetUp {
 		contact.setAttorney(data.get("Attorney"));
 		
 		contact.setpwdText(data.get("MemberPwd"));
+		
 		contact.setmemberId(data.get("MemberId"));
 		contact.setimisTxt(data.get("IMIS"));
 		contact.setnotesTxt(data.get("NotesText"));
