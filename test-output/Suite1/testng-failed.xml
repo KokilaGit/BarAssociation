@@ -10,8 +10,6 @@
         <methods>
           <include name="setUp"/>
           <include name="closeUp"/>
-          <include name="languageCategory"/>
-          <include name="memberCategory"/>
           <include name="paymentCategory"/>
         </methods>
       </class> <!-- com.contracosta.barassociation.MemberForm -->

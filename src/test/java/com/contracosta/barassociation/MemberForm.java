@@ -5,19 +5,28 @@ import java.util.HashMap;
 
 import org.testng.annotations.Test;
 
-import com.contracosta.pom.AddMemberContact;
 import com.contracosta.pom.LanguageSelection;
 import com.contracosta.pom.LoginPage;
-import com.contracosta.pom.MembershipCategories;
+import com.contracosta.pom.MainMenu;
 import com.contracosta.pom.PaymentPage;
+import com.contracosta.pom.subpages.Contacts.AdditionalMemberInfo;
+import com.contracosta.pom.subpages.Contacts.MemberCommAndDirectoryPreferrence;
+import com.contracosta.pom.subpages.Contacts.MemberContactAttorneyInfo;
+import com.contracosta.pom.subpages.Contacts.MemberContactFirmName;
+import com.contracosta.pom.subpages.Contacts.MemberContactModuleField;
+import com.contracosta.pom.subpages.Contacts.MemberContactOfficeAddress;
+import com.contracosta.pom.subpages.Contacts.MemberContactUserCredentials;
+import com.contracosta.pom.subpages.Contacts.MemeberContactMemberInfo;
+import com.contracosta.pom.subpages.Membership.MembershipCategories;
+import com.contracosta.pom.subpages.Membership.MembershipDonationContribution;
+import com.contracosta.pom.subpages.Membership.MembershipProductsServices;
 
 public class MemberForm extends DriverSetUp {
 
 	@Test(dataProvider = "create",dataProviderClass= DataProviderMemberForm.class,priority = 1)
-	public void loginTest(HashMap<String, String> data) throws InterruptedException {
+	public void loginTest(HashMap<String, String> data)  {
 
 		LoginPage login = new LoginPage(driver);
-
 		login.setUserName(data.get("UserName"));
 		login.setPassword(data.get("Password"));
 		login.clickLogin();
@@ -25,11 +34,12 @@ public class MemberForm extends DriverSetUp {
 	}
 
 	@Test(dataProvider = "memberInfo",dataProviderClass= DataProviderMemberForm.class,priority = 2)
-	public void contactForm(HashMap<String, String> data) throws InterruptedException {
+	public void contactForm(HashMap<String, String> data)  {
 
-		// build()- used to compile all the actions into a single step
-
-		AddMemberContact contact = new AddMemberContact(driver);
+		MainMenu menu = new MainMenu(driver);
+		menu.selectAddMember();
+		
+		MemeberContactMemberInfo contact = new MemeberContactMemberInfo(driver);
 		contact.setSalutationDropdown(data.get("Salutation"));
 		contact.setFirstNameText(data.get("FirstName"));
 		contact.setInitialTxt(data.get("Initial"));
@@ -53,68 +63,93 @@ public class MemberForm extends DriverSetUp {
 		contact.setwebsiteText(data.get("Website"));
 		contact.setAttorney(data.get("Attorney"));
 		
-		contact.setpwdText(data.get("MemberPwd"));
+		MemberContactUserCredentials credentials = new MemberContactUserCredentials(driver);
+		credentials.setpwdText(data.get("MemberPwd"));
 		
-		contact.setmemberId(data.get("MemberId"));
-		contact.setimisTxt(data.get("IMIS"));
-		contact.setnotesTxt(data.get("NotesText"));
+		AdditionalMemberInfo additionalInfo = new AdditionalMemberInfo(driver);
+		additionalInfo.setmemberId(data.get("MemberId"));
+		additionalInfo.setimisTxt(data.get("IMIS"));
+		additionalInfo.setnotesTxt(data.get("NotesText"));
 		
-		contact.setContactPrefference(data.get("ContactPrefference"));
-		contact.setMagazinePrefference(data.get("MagazinePrefference"));
-		contact.setEventBroadcast(data.get("EventBroadcastPrefference"));
-		contact.setCommitteBroadcast(data.get("CommitteBroadcastPrefference"));
-		contact.setMailingList(data.get("MailingOption"));
-		contact.setPublishNameOnlinechbx(data.get("PublishNameOnline"));
-		contact.setPublishNamePrintchbx(data.get("PublishNamePrint"));
-		contact.setPublishEmailOnlinechbx(data.get("PublishEmailOnline"));
-		contact.setPublishEmailPrintchbx(data.get("PublishEmailPrint"));
-		contact.setPublishPhoneOnlinechbx(data.get("PublishPhoneOnline"));
-		contact.setPublishPhonePrintchbx(data.get("PublishPhonePrint"));
-		contact.setPublishPhotoOnlinechbx(data.get("PublishPhotoOnline"));
-		contact.setPublishPhotoPrintchbx(data.get("PublishPhotoPrint"));
-		contact.setPublishBioOnlinechbx(data.get("PublishBioOnline"));
-		contact.setPublishBioPrintchbx(data.get("PublishBioPrint"));
-		contact.setStudentMentorCheckBox(data.get("StudentMentor"));
-		contact.setAttWantMentorChbx(data.get("AttorneyMentor"));
-		contact.setMentorToStuChbx(data.get("MentorToStudent"));
-		contact.setMenToAttorneyChbx(data.get("MentorToAttorney"));
-		contact.setmoduleField("125abhy");
-		contact.setFirmNameRadioBtn();
-		contact.setDateText("02/15/8888");
-		contact.setstateAdmittedText();
-		contact.setdateAdmittedText("03/18/1111");
-		Thread.sleep(5000);
-		contact.setNextBtn();
+		MemberCommAndDirectoryPreferrence memberPreferrence = new MemberCommAndDirectoryPreferrence(driver);	
+		memberPreferrence.setContactPrefference(data.get("ContactPrefference"));
+		memberPreferrence.setMagazinePrefference(data.get("MagazinePrefference"));
+		memberPreferrence.setEventBroadcast(data.get("EventBroadcastPrefference"));
+		memberPreferrence.setCommitteBroadcast(data.get("CommitteBroadcastPrefference"));
+		memberPreferrence.setMailingList(data.get("MailingOption"));
+		memberPreferrence.setPublishNameOnlinechbx(data.get("PublishNameOnline"));
+		memberPreferrence.setPublishNamePrintchbx(data.get("PublishNamePrint"));
+		memberPreferrence.setPublishEmailOnlinechbx(data.get("PublishEmailOnline"));
+		memberPreferrence.setPublishEmailPrintchbx(data.get("PublishEmailPrint"));
+		memberPreferrence.setPublishPhoneOnlinechbx(data.get("PublishPhoneOnline"));
+		memberPreferrence.setPublishPhonePrintchbx(data.get("PublishPhonePrint"));
+		memberPreferrence.setPublishPhotoOnlinechbx(data.get("PublishPhotoOnline"));
+		memberPreferrence.setPublishPhotoPrintchbx(data.get("PublishPhotoPrint"));
+		memberPreferrence.setPublishBioOnlinechbx(data.get("PublishBioOnline"));
+		memberPreferrence.setPublishBioPrintchbx(data.get("PublishBioPrint"));
+		memberPreferrence.setStudentMentorCheckBox(data.get("StudentMentor"));
+		memberPreferrence.setAttWantMentorChbx(data.get("AttorneyMentor"));
+		memberPreferrence.setMentorToStuChbx(data.get("MentorToStudent"));
+		memberPreferrence.setMenToAttorneyChbx(data.get("MentorToAttorney"));
+		
+		MemberContactModuleField module = new MemberContactModuleField(driver);
+		module.setmoduleField("125abhy");
+		
+		MemberContactFirmName firm = new MemberContactFirmName(driver);
+		firm.setFirmNameRadioBtn();
+		
+		MemberContactOfficeAddress officeAddress = new MemberContactOfficeAddress(driver);
+		officeAddress.setSameMailingChbx(data.get("SameMailinfInfo"));
+		officeAddress.setOfficePhone(data.get("OfficePhone"));
+		officeAddress.setOfficeFax(data.get("OfficeFax"));
+		officeAddress.setOfficeEmail1(data.get("Email1"));
+		officeAddress.setOfficeEmail2(data.get("Email2"));
+		officeAddress.setOfficeAddress1(data.get("OfficeAddress1"));
+		officeAddress.setOfficeAddressCity(data.get("OfficeAddressCity"));
+		officeAddress.setOfficeAddressStateDropDown(data.get("OfficeAddressState"));
+		officeAddress.setOfficeAddressZipcode(data.get("OfficeAddressZipcode"));
+		
+		MemberContactAttorneyInfo attorneyContact = new MemberContactAttorneyInfo(driver);
+		attorneyContact.setDateFirstAdmittedToStateText(data.get("DateFirstAdmittedToState"));
+		attorneyContact.setstateAdmittedText();
+		attorneyContact.setdateAdmittedText(data.get("DateAdmitted"));
+		
+		
+		menu.setNextBtn();
 
 		
 
 	}
 
-	@Test(priority = 3)
-	public void memberCategory() throws InterruptedException {
+	@Test(dataProvider = "membership",dataProviderClass= DataProviderMemberForm.class,priority = 3)
+	public void memberCategory(HashMap<String, String> data)  {
+		MainMenu menu = new MainMenu(driver);
 		MembershipCategories category = new MembershipCategories(driver);
-		category.settestRadioBtn();
-		// Thread.sleep(2000);
-		category.setnextBtn();
+		category.setCategorybtn(data.get("MemberCategory"));
+		MembershipDonationContribution donation = new MembershipDonationContribution(driver);
+		donation.setDonationInfo(data.get("DonationInformation"));
+		MembershipProductsServices productServices = new MembershipProductsServices(driver);
+		productServices.setProductsServices(data.get("ProductServices"));
+		menu.setNextBtn();
+		
 	}
 
-	@Test(priority = 4)
-	public void languageCategory() throws InterruptedException {
+	@Test(dataProvider = "language",dataProviderClass = DataProviderMemberForm.class,priority = 4)
+	public void languageCategory(HashMap<String, String> data)  {
 		LanguageSelection language = new LanguageSelection(driver);
-		language.setCheckBox();
-		// Thread.sleep(3000);
-		language.setNextBtn();
+		language.setLanguageCheckBoxes(data.get("Languages"));
+		MainMenu menu = new MainMenu(driver);
+		menu.setNextBtn();
 	}
 
-	@Test(priority = 5)
-	public void paymentCategory() throws InterruptedException {
+	@Test(dataProvider = "payment",dataProviderClass = DataProviderMemberForm.class,priority = 5)
+	public void paymentCategory(HashMap<String, String> data)  {
 		PaymentPage payment = new PaymentPage(driver);
-		payment.setCashRadioBtn();
-		payment.setCheckBox();
-		payment.setNotesTextField("Test Payment Note.");
-		// Thread.sleep(13000);
+		payment.setPaymentRadioBtn(data.get("PaymentType"));
+		payment.setNotesTextField(data.get("PaymentNotes"));
 		payment.setSubmitBtn();
 		payment.setSuccessMsg();
+		
 	}
 
 }

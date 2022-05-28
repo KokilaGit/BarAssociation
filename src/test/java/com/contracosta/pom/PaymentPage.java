@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import com.contracosta.pom.utils.PageUtilities;
+
 public class PaymentPage {
 	
 	WebDriver driver;
@@ -16,15 +18,14 @@ public class PaymentPage {
 	public PaymentPage(WebDriver driver) {
 		super();
 		this.driver = driver;
-		this.cashRadioBtn = driver.findElement(By.id("optPayType_3"));
 		this.checkBox = driver.findElement(By.id("chknotsend"));
 		this.notesTextField = driver.findElement(By.id("txtPaymentNote"));
-		this.submitBtn = driver.findElement(By.id("cmdAdd"));
 		
 	}
 	
-	public void setCashRadioBtn() {
-		this.cashRadioBtn.click();
+	public void setPaymentRadioBtn(String paymentSelect) {
+		WebElement paymentBtn = PageUtilities.getInputByLabel(driver, paymentSelect);
+		paymentBtn.click();
 	}
 	
 	public void setCheckBox() {

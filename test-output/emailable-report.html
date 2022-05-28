@@ -8,20 +8,135 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite1</th></tr>
-<tr><td><a href="#t0">UnitTesting</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">61,662</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">56,506</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">UnitTesting &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.contracosta.barassociation.MemberForm</td><td><a href="#m0">languageCategory</a></td><td rowspan="1">1648599382117</td><td rowspan="1">10048</td></tr><tr class="failedeven"><td><a href="#m1">memberCategory</a></td><td rowspan="1">1648599371583</td><td rowspan="1">10045</td></tr><tr class="failedeven"><td><a href="#m2">paymentCategory</a></td><td rowspan="1">1648599392693</td><td rowspan="1">10041</td></tr><tr><th colspan="4">UnitTesting &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.contracosta.barassociation.MemberForm</td><td><a href="#m3">contactForm</a></td><td rowspan="1">1648599345891</td><td rowspan="1">25243</td></tr><tr class="passedeven"><td><a href="#m4">loginTest</a></td><td rowspan="1">1648599342159</td><td rowspan="1">3238</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.contracosta.barassociation.MemberForm</td><td><a href="#m0">languageCategory</a></td><td rowspan="1">1652973319884</td><td rowspan="1">10069</td></tr><tr class="failedeven"><td><a href="#m1">memberCategory</a></td><td rowspan="1">1652973309392</td><td rowspan="1">10047</td></tr><tr class="failedeven"><td><a href="#m2">paymentCategory</a></td><td rowspan="1">1652973330391</td><td rowspan="1">10011</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.contracosta.barassociation.MemberForm</td><td><a href="#m3">contactForm</a></td><td rowspan="1">1652973291299</td><td rowspan="1">17646</td></tr><tr class="passedeven"><td><a href="#m4">loginTest</a></td><td rowspan="1">1652973284904</td><td rowspan="1">5664</td></tr></tbody>
 </table>
-<h2>UnitTesting</h2><h3 id="m0">com.contracosta.barassociation.MemberForm#languageCategory</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220329191632.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220329191632.png' height='100' width='100'/> </a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ucLanguage_chkLanguage_15&quot;}
-  (Session info: chrome=100.0.4896.60)
+<h2>Default test</h2><h3 id="m0">com.contracosta.barassociation.MemberForm#languageCategory</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Languages=Chinese,Tamil,Hindi,English}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=//label[contains(text(),&apos;Chinese&apos;)]/@for]&quot;}
+  (Session info: chrome=102.0.5005.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;fd91:beb9:3063:4b36:10c5:a5c8:7725:e43b%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_311&apos;
+System info: host: &apos;MacBook-Pro-2.local&apos;, ip: &apos;fe80:0:0:0:8ec:2aef:f3af:f7af%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3.1&apos;, java.version: &apos;1.8.0_321&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:63132}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5b31b49e292e59b635e479f61c841092
-*** Element info: {Using=id, value=ucLanguage_chkLanguage_15}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.27 (df4a85108ffa..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:62083}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d831bc0f61ff1c4d8a0c73c5517e091c
+*** Element info: {Using=xpath, value=//input[@id=//label[contains(text(),&apos;Chinese&apos;)]/@for]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.contracosta.pom.utils.PageUtilities.getInputByLabel(PageUtilities.java:26)
+	at com.contracosta.pom.LanguageSelection.setLanguageCheckBox(LanguageSelection.java:20)
+	at com.contracosta.pom.LanguageSelection.setLanguageCheckBoxes(LanguageSelection.java:35)
+	at com.contracosta.barassociation.MemberForm.languageCategory(MemberForm.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.contracosta.barassociation.MemberForm#memberCategory</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{ProductServices=LAW_Test 1|2|150, DonationInformation=JFK &amp; JD Scholarship|200,member_renewal_cont_nc|100, MemberCategory=Test}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=//label[contains(text(),&apos;Test&apos;)]/@for]&quot;}
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Pro-2.local&apos;, ip: &apos;fe80:0:0:0:8ec:2aef:f3af:f7af%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3.1&apos;, java.version: &apos;1.8.0_321&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.27 (df4a85108ffa..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:62083}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d831bc0f61ff1c4d8a0c73c5517e091c
+*** Element info: {Using=xpath, value=//input[@id=//label[contains(text(),&apos;Test&apos;)]/@for]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.contracosta.pom.utils.PageUtilities.getInputByLabel(PageUtilities.java:26)
+	at com.contracosta.pom.subpages.Membership.MembershipCategories.setCategorybtn(MembershipCategories.java:21)
+	at com.contracosta.barassociation.MemberForm.memberCategory(MemberForm.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.contracosta.barassociation.MemberForm#paymentCategory</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{PaymentNotes=Test Payment Note., PaymentType=CASH}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#chknotsend&quot;}
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Pro-2.local&apos;, ip: &apos;fe80:0:0:0:8ec:2aef:f3af:f7af%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.3.1&apos;, java.version: &apos;1.8.0_321&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.27 (df4a85108ffa..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:62083}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d831bc0f61ff1c4d8a0c73c5517e091c
+*** Element info: {Using=id, value=chknotsend}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -32,57 +147,38 @@ Session ID: 5b31b49e292e59b635e479f61c841092
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
 	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.contracosta.pom.LanguageSelection.&lt;init&gt;(LanguageSelection.java:17)
-	at com.contracosta.barassociation.MemberForm.languageCategory(MemberForm.java:102)
+	at com.contracosta.pom.PaymentPage.&lt;init&gt;(PaymentPage.java:21)
+	at com.contracosta.barassociation.MemberForm.paymentCategory(MemberForm.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.contracosta.barassociation.MemberForm#memberCategory</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220329191621.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220329191621.png' height='100' width='100'/> </a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#rptrMembership_optMem_9&quot;}
-  (Session info: chrome=100.0.4896.60)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;fd91:beb9:3063:4b36:10c5:a5c8:7725:e43b%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_311&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:63132}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5b31b49e292e59b635e479f61c841092
-*** Element info: {Using=id, value=rptrMembership_optMem_9}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.contracosta.pom.MembershipCategories.&lt;init&gt;(MembershipCategories.java:14)
-	at com.contracosta.barassociation.MemberForm.memberCategory(MemberForm.java:94)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.contracosta.barassociation.MemberForm#paymentCategory</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220329191642.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportsfailure_screenshots/ScreenShot 20220329191642.png' height='100' width='100'/> </a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#optPayType_3&quot;}
-  (Session info: chrome=100.0.4896.60)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;fd91:beb9:3063:4b36:10c5:a5c8:7725:e43b%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_311&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.60, chrome: {chromedriverVersion: 100.0.4896.20 (f9d71f93d32a..., userDataDir: /var/folders/lh/5f3b6b7x5h1...}, goog:chromeOptions: {debuggerAddress: localhost:63132}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5b31b49e292e59b635e479f61c841092
-*** Element info: {Using=id, value=optPayType_3}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.contracosta.pom.PaymentPage.&lt;init&gt;(PaymentPage.java:19)
-	at com.contracosta.barassociation.MemberForm.paymentCategory(MemberForm.java:110)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.contracosta.barassociation.MemberForm#contactForm</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Zip=19804, Email=contracosta@abc19.com, EventBroadcastPrefference=no, Website=www.avf.com, NotesText=This is a sample message for private notes., Gender=Male, Salutation=Judge, PublishPhoneOnline=yes, StudentMentor=yes, PublishNamePrint=no, MemberPwd=high12, MemberId=165489, PublishBioOnline=no, Phone1=456-763-1097, Phone2=123-456-7890, PublishPhotoPrint=yes, DOB=03/18/1990, PublishEmailPrint=yes, AttorneyMentor=no, PublishNameOnline=yes, Cell=708-567-2146, CommitteBroadcastPrefference=yes, PublishEmailOnline=no, MailingOption=yes, FirstName=Michael, PublishPhonePrint=yes, Address2=Suite101, MentorToStudent=yes, ContactPrefference=email, Address1=15,abc street, City=Wilmington, NickName=Mike, IMIS=Test, Ethnicity=Latino, Suffix=Esq., PublishPhotoOnline=no, State=Delaware, PublishBioPrint=yes, MentorToAttorney=no, Country=United States, MagazinePrefference=mail, LastName=Bob, Fax=543-189-9065, Initial=R, Attorney=Yes}</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages"><a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220329191611.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220329191611.png' height='100' width='100'/> </a></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.contracosta.barassociation.MemberForm#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{UserName=itodadmin19@intellinx.com, Password=itoddev96}</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages"><a href='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220329191545.png'> <img src='/Users/Kokila/eclipse-workspace/addMemberNew/target/surefire_reportssuccess_screenshots/ScreenShot 20220329191545.png' height='100' width='100'/> </a></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.contracosta.barassociation.MemberForm#contactForm</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Zip=19804, OfficePhone=376-287-1954, Email=contracosta@abcd12191.com, EventBroadcastPrefference=no, Gender=Male, PublishNamePrint=no, PublishBioOnline=no, PublishPhotoPrint=yes, DOB=03/18/1990, PublishEmailPrint=yes, AttorneyMentor=no, Cell=708-567-2146, PublishEmailOnline=no, MailingOption=yes, PublishPhonePrint=yes, MentorToStudent=yes, ContactPrefference=email, City=Wilmington, NickName=Mike, SameMailinfInfo=yes, Suffix=Esq., PublishPhotoOnline=no, DateAdmitted=03/18/2002, State=Delaware, PublishBioPrint=yes, DateFirstAdmittedToState=02/15/2002, MentorToAttorney=no, Country=United States, LastName=Bob, Attorney=Yes, OfficeFax=532-326-1785, Website=www.avf.com, NotesText=This is a sample message for private notes., Salutation=Judge, PublishPhoneOnline=yes, StudentMentor=yes, OfficeAddressState=California, MemberPwd=high12, MemberId=1654828, Phone1=456-763-1097, Phone2=123-456-7890, Email1=acv@costa.com, Email2= , PublishNameOnline=yes, OfficeAddressZipcode=38764, OfficeAddressCounty= , CommitteBroadcastPrefference=yes, FirstName=Michael, Address2=Suite101, Address1=15,abc street, IMIS=Test, OfficeAddress2= , OfficeAddress1=189,car strret, Ethnicity=Latino, MagazinePrefference=mail, OfficeAddressCity=Fenton, Fax=543-189-9065, Initial=R}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.contracosta.barassociation.MemberForm#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{UserName=itodadmin19@intellinx.com, Password=itoddev96}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

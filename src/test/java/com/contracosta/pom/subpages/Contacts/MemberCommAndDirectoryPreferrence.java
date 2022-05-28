@@ -1,9 +1,9 @@
-package com.contracosta.pom.subpages;
+package com.contracosta.pom.subpages.Contacts;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
+
 
 import com.contracosta.pom.utils.PageUtilities;
 
@@ -38,25 +38,9 @@ public class MemberCommAndDirectoryPreferrence {
 	WebElement mentorToStuChbx;
 	WebElement menToAttorneyChbx;
 	
-	public MemberCommAndDirectoryPreferrence(WebDriver driver) throws InterruptedException {
+	public MemberCommAndDirectoryPreferrence(WebDriver driver)  {
 		super();
-		this.driver = driver;
-		// Locating the Main Menu (Parent element)
-		WebElement mainMenu = driver.findElement(By.id("ucTopNavHomeBar_lnkAAM"));
-
-		// Instantiating Actions class
-		Actions actions = new Actions(driver);
-
-		// Hovering on main menu
-		actions.moveToElement(mainMenu).build().perform();
-
-		// Locating the element from Sub Menu
-		WebElement subMenu = driver.findElement(By.xpath("//*[@id='ucTopNavHomeBar_limemAddMember']"));
-
-		// To mouseover on sub menu
-		actions.moveToElement(subMenu);
-		actions.click().build().perform();
-		
+		this.driver = driver;	
 		this.publishNameOnlinechbx = driver.findElement(By.id("ucContact_chkMyListingO"));
 		this.publishNamePrintchbx = driver.findElement(By.id("ucContact_chkMyListingP"));
 		this.publishEmailOnlinechbx = driver.findElement(By.id("ucContact_chkMyEmailAddressO"));

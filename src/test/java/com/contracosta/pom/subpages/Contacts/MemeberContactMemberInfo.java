@@ -1,10 +1,9 @@
-package com.contracosta.pom.subpages;
+package com.contracosta.pom.subpages.Contacts;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
+import com.contracosta.pom.utils.PageUtilities;
 
 public class MemeberContactMemberInfo {
 	WebDriver driver;
@@ -42,25 +41,10 @@ public class MemeberContactMemberInfo {
 	WebElement websiteText;
 	WebElement attorneyYesRadioBtn;
 	WebElement attorneyNoRadioBtn;
-	
-	public MemeberContactMemberInfo(WebDriver driver) throws InterruptedException {
+
+	public MemeberContactMemberInfo(WebDriver driver)  {
 		super();
 		this.driver = driver;
-		// Locating the Main Menu (Parent element)
-		WebElement mainMenu = driver.findElement(By.id("ucTopNavHomeBar_lnkAAM"));
-
-		// Instantiating Actions class
-		Actions actions = new Actions(driver);
-
-		// Hovering on main menu
-		actions.moveToElement(mainMenu).build().perform();
-
-		// Locating the element from Sub Menu
-		WebElement subMenu = driver.findElement(By.xpath("//*[@id='ucTopNavHomeBar_limemAddMember']"));
-
-		// To mouseover on sub menu
-		actions.moveToElement(subMenu);
-		actions.click().build().perform();
 		this.salutationDropdown = driver.findElement(By.id("ucContact_cboSalut"));
 		this.firstNameText = driver.findElement(By.id("ucContact_txtFN"));
 		this.initialTxt = driver.findElement(By.id("ucContact_txtMN"));
@@ -96,176 +80,155 @@ public class MemeberContactMemberInfo {
 		this.attorneyYesRadioBtn = driver.findElement(By.id("ucContact_optAttorneyYes"));
 		this.attorneyNoRadioBtn = driver.findElement(By.id("ucContact_optAttorneyNo"));
 	}
-	
+
 	/**
 	 * @param salutationDropdown the salutationDropdown to set
 	 */
 	public void setSalutationDropdown(String salutationDropdownTxt) {
-		this.salutationDropdown.click();
-		Select select1 = new Select(salutationDropdown);
-		// select1.selectByValue("1");
-		select1.selectByVisibleText(salutationDropdownTxt);
+
+		PageUtilities.setDropDown(this.salutationDropdown, salutationDropdownTxt);
 	}
 
 	/**
 	 * @param firstNameText the firstNameText to set
 	 */
 	public void setFirstNameText(String firstNameText) {
-		this.firstNameText.clear();
-		this.firstNameText.sendKeys(firstNameText);
+		PageUtilities.setInputText(this.firstNameText, firstNameText);
 	}
 
 	/**
 	 * @param initialTxt the initialTxt to set
 	 */
 	public void setInitialTxt(String initialTxt) {
-		this.initialTxt.clear();
-		this.initialTxt.sendKeys(initialTxt);
+		PageUtilities.setInputText(this.initialTxt, initialTxt);
 	}
 
 	/**
 	 * @param lastNameText the lastNameText to set
 	 */
 	public void setLastNameText(String lastNameText) {
-		this.lastNameText.clear();
-		this.lastNameText.sendKeys(lastNameText);
+		PageUtilities.setInputText(this.lastNameText, lastNameText);
 	}
 
 	/**
 	 * @param nickNameText the nickNameText to set
 	 */
 	public void setnickNameText(String nickNameText) {
-		this.nickNameText.clear();
-		this.nickNameText.sendKeys(nickNameText);
+		PageUtilities.setInputText(this.nickNameText, nickNameText);
 	}
 
 	/**
 	 * @param salutationDropdown the salutationDropdown to set
 	 */
 	public void setSuffixDropdown(String suffixDropdownTxt) {
-		this.suffixDropDown.click();
-		Select select1 = new Select(suffixDropDown);
-		select1.selectByVisibleText(suffixDropdownTxt);
+		PageUtilities.setDropDown(this.suffixDropDown, suffixDropdownTxt);
 	}
+
 	public void setDateOfBirth(String dob) {
-		String[] dobArray = dob.split("/");
-		this.setdobMonthDropdown(dobArray[0]);
-		this.setdobDateDropdown(dobArray[1]);
-		this.setdobYearDropdown(dobArray[2]);
+		if (PageUtilities.valueNotEmpty(dob)) {
+			String[] dobArray = dob.split("/");
+			this.setdobMonthDropdown(dobArray[0]);
+			this.setdobDateDropdown(dobArray[1]);
+			this.setdobYearDropdown(dobArray[2]);
+		}
 	}
 
 	/**
 	 * @param dobMonthDropdown the dobMonthDropdown to set
 	 */
 	public void setdobMonthDropdown(String dobMonthDropdownTxt) {
-		this.dobMonthDropDown.click();
-		Select select1 = new Select(dobMonthDropDown);
-		select1.selectByVisibleText(dobMonthDropdownTxt);
+		PageUtilities.setDropDown(this.dobMonthDropDown, dobMonthDropdownTxt);
 	}
 
 	/**
 	 * @param dobDateDropdown the dobDateDropdown to set
 	 */
 	public void setdobDateDropdown(String dobDateDropdownTxt) {
-		this.dobDateDropDown.click();
-		Select select1 = new Select(dobDateDropDown);
-		select1.selectByVisibleText(dobDateDropdownTxt);
+		PageUtilities.setDropDown(this.dobDateDropDown, dobDateDropdownTxt);
 	}
 
 	/**
 	 * @param dobYearDropdown the dobYearDropdown to set
 	 */
 	public void setdobYearDropdown(String dobYearDropdownTxt) {
-		this.dobYearDropDown.click();
-		Select select1 = new Select(dobYearDropDown);
-		select1.selectByVisibleText(dobYearDropdownTxt);
+		PageUtilities.setDropDown(this.dobYearDropDown, dobYearDropdownTxt);
 	}
 
 	/**
 	 * @param ethnicity the ethnicity to set
 	 */
 	public void setEthnicity(String ethnicitySelect) {
-		this.ethnicity.click();
-		Select select = new Select(ethnicity);
-		select.selectByVisibleText(ethnicitySelect);
+		PageUtilities.setDropDown(this.ethnicity, ethnicitySelect);
 	}
 
 	/**
 	 * @param genderDropDown the genderDropDown to set
 	 */
 	public void setGenderDropDown(String genderDropDownselect) {
-		this.genderDropDown.click();
-		Select select = new Select(genderDropDown);
-		select.selectByVisibleText(genderDropDownselect);
-
+		PageUtilities.setDropDown(this.genderDropDown, genderDropDownselect);
 	}
 
 	/**
 	 * @param countryDropDown the countryDropDownText to set
 	 */
 	public void setCountryDropDown(String countryDropDownSelect) {
-		this.country.click();
-		Select select = new Select(country);
-		select.selectByVisibleText(countryDropDownSelect);
+		PageUtilities.setDropDown(this.country, countryDropDownSelect);
 
 	}
+
 	public void setPhone1(String phoneNum) {
-		//phone number is in the format of 123-456-3845
-		 String[] phoneNumArray = phoneNum.split("-");
-		 this.setphone1Part1(phoneNumArray[0]);
-		 this.setphone1Part2(phoneNumArray[1]);
-		 this.setphone1Part3(phoneNumArray[2]);
+		// phone number is in the format of 123-456-3845
+		if (PageUtilities.valueNotEmpty(phoneNum)) {
+			String[] phoneNumArray = phoneNum.split("-");
+			this.setphone1Part1(phoneNumArray[0]);
+			this.setphone1Part2(phoneNumArray[1]);
+			this.setphone1Part3(phoneNumArray[2]);
+		}
 	}
 
 	/**
 	 * @param phoneText the phoneText to set
 	 */
 	public void setphone1Part1(String phone1Part1) {
-		this.phone1Part1.clear();
-		this.phone1Part1.sendKeys(phone1Part1);
-
+		PageUtilities.setInputText(this.phone1Part1, phone1Part1);
 	}
 
 	/**
 	 * @param phoneText the phoneText to set
 	 */
 	public void setphone1Part2(String phone1Part2) {
-		this.phone1Part2.clear();
-		this.phone1Part2.sendKeys(phone1Part2);
-
+		PageUtilities.setInputText(this.phone1Part2, phone1Part2);
 	}
 
 	/**
 	 * @param phoneText the phoneText to set
 	 */
 	public void setphone1Part3(String phone1Part3) {
-		this.phone1Part3.clear();
-		this.phone1Part3.sendKeys(phone1Part3);
-
+		PageUtilities.setInputText(this.phone1Part3, phone1Part3);
 	}
+
 	public void setPhone2(String phoneNum) {
-		//phone number is in the format of 123-456-3845
-		 String[] phoneNumArray = phoneNum.split("-");
-		 this.setphone2Part1(phoneNumArray[0]);
-		 this.setphone2Part2(phoneNumArray[1]);
-		 this.setphone2Part3(phoneNumArray[2]);
+		// phone number is in the format of 123-456-3845
+		if (PageUtilities.valueNotEmpty(phoneNum)) {
+			String[] phoneNumArray = phoneNum.split("-");
+			this.setphone2Part1(phoneNumArray[0]);
+			this.setphone2Part2(phoneNumArray[1]);
+			this.setphone2Part3(phoneNumArray[2]);
+		}
 	}
 
 	/**
 	 * @param phoneText the phoneText to set
 	 */
 	public void setphone2Part1(String phone2Part1) {
-		this.phone2Part1.clear();
-		this.phone2Part1.sendKeys(phone2Part1);
-
+		PageUtilities.setInputText(this.phone2Part1, phone2Part1);
 	}
 
 	/**
 	 * @param phoneText the phoneText to set
 	 */
 	public void setphone2Part2(String phone2Part2) {
-		this.phone2Part2.clear();
-		this.phone2Part2.sendKeys(phone2Part2);
+		PageUtilities.setInputText(this.phone2Part2, phone2Part2);
 
 	}
 
@@ -273,25 +236,25 @@ public class MemeberContactMemberInfo {
 	 * @param phoneText the phoneText to set
 	 */
 	public void setphone2Part3(String phone2Part3) {
-		this.phone2Part3.clear();
-		this.phone2Part3.sendKeys(phone2Part3);
+		PageUtilities.setInputText(this.phone2Part3, phone2Part3);
 
 	}
+
 	public void setCell(String cellNum) {
-		//phone number is in the format of 123-456-3845
-		 String[] cellNumArray = cellNum.split("-");
-		 this.setcellPart1(cellNumArray[0]);
-		 this.setcellPart2(cellNumArray[1]);
-		 this.setcellPart3(cellNumArray[2]);
+		// phone number is in the format of 123-456-3845
+		if (PageUtilities.valueNotEmpty(cellNum)) {
+		String[] cellNumArray = cellNum.split("-");
+		this.setcellPart1(cellNumArray[0]);
+		this.setcellPart2(cellNumArray[1]);
+		this.setcellPart3(cellNumArray[2]);
+		}
 	}
-
 
 	/**
 	 * @param cellText the cellText to set
 	 */
 	public void setcellPart1(String cellPart1) {
-
-		this.cellPart1.sendKeys(cellPart1);
+		PageUtilities.setInputText(this.cellPart1, cellPart1);
 
 	}
 
@@ -299,8 +262,7 @@ public class MemeberContactMemberInfo {
 	 * @param cellText the cellText to set
 	 */
 	public void setcellPart2(String cellPart2) {
-
-		this.cellPart2.sendKeys(cellPart2);
+		PageUtilities.setInputText(this.cellPart2, cellPart2);
 
 	}
 
@@ -308,24 +270,25 @@ public class MemeberContactMemberInfo {
 	 * @param cellText the cellText to set
 	 */
 	public void setcellPart3(String cellPart3) {
-
-		this.cellPart3.sendKeys(cellPart3);
+		PageUtilities.setInputText(this.cellPart3, cellPart3);
 
 	}
+
 	public void setFax(String faxNum) {
-		//phone number is in the format of 123-456-3845
-		 String[] faxNumArray = faxNum.split("-");
-		 this.setfaxPart1(faxNumArray[0]);
-		 this.setfaxPart2(faxNumArray[1]);
-		 this.setfaxPart3(faxNumArray[2]);
+		// phone number is in the format of 123-456-3845
+		if (PageUtilities.valueNotEmpty(faxNum)) {
+		String[] faxNumArray = faxNum.split("-");
+		this.setfaxPart1(faxNumArray[0]);
+		this.setfaxPart2(faxNumArray[1]);
+		this.setfaxPart3(faxNumArray[2]);
+		}
 	}
 
 	/**
 	 * @param faxText the faxText to set
 	 */
 	public void setfaxPart1(String faxPart1) {
-
-		this.faxPart1.sendKeys(faxPart1);
+		PageUtilities.setInputText(this.faxPart1, faxPart1);
 
 	}
 
@@ -333,8 +296,7 @@ public class MemeberContactMemberInfo {
 	 * @param faxText the faxText to set
 	 */
 	public void setfaxPart2(String faxPart2) {
-
-		this.faxPart2.sendKeys(faxPart2);
+		PageUtilities.setInputText(this.faxPart2, faxPart2);
 
 	}
 
@@ -342,8 +304,7 @@ public class MemeberContactMemberInfo {
 	 * @param faxText the faxText to set
 	 */
 	public void setfaxPart3(String faxPart3) {
-
-		this.faxPart3.sendKeys(faxPart3);
+		PageUtilities.setInputText(this.faxPart3, faxPart3);
 
 	}
 
@@ -351,59 +312,49 @@ public class MemeberContactMemberInfo {
 	 * @param emailText the emailText to set
 	 */
 	public void setEmailText(String emailText) {
-		this.emailText.clear();
-		this.emailText.sendKeys(emailText);
+		PageUtilities.setInputText(this.emailText, emailText);
 	}
 
 	/**
 	 * @param address1Text the address1Text to set
 	 */
 	public void setAddress1Text(String address1Text) {
-		this.address1Text.clear();
-		this.address1Text.sendKeys(address1Text);
+		PageUtilities.setInputText(this.address1Text, address1Text);
 	}
 
 	/**
 	 * @param address1Text the address1Text to set
 	 */
 	public void setAddress2Text(String address2Text) {
-		this.address2Text.clear();
-		this.address2Text.sendKeys(address2Text);
+		PageUtilities.setInputText(this.address2Text, address2Text);
 	}
-
 
 	/**
 	 * @param cityText the cityText to set
 	 */
 	public void setCityText(String cityText) {
-		this.cityText.clear();
-		this.cityText.sendKeys(cityText);
+		PageUtilities.setInputText(this.cityText, cityText);
 	}
-
 
 	/**
 	 * @param stateDropDown the stateDropDown to set
 	 */
 	public void setStateDropDown(String stateDropDown) {
-		Select state = new Select(this.stateDropDown);
-		state.selectByVisibleText(stateDropDown);
-
+		PageUtilities.setDropDown(this.stateDropDown, stateDropDown);
 	}
 
 	/**
 	 * @param zipcodeText the zipcodeText to set
 	 */
 	public void setZipcodeText(String zipcodeText) {
-		this.zipcodeText.clear();
-		this.zipcodeText.sendKeys(zipcodeText);
+		PageUtilities.setInputText(this.zipcodeText, zipcodeText);
 	}
 
 	/**
 	 * @param websiteText the websiteText to set
 	 */
 	public void setwebsiteText(String websiteText) {
-		this.websiteText.clear();
-		this.websiteText.sendKeys(websiteText);
+		PageUtilities.setInputText(this.websiteText, websiteText);
 	}
 
 	public void setAttorney(String value) {
@@ -432,6 +383,5 @@ public class MemeberContactMemberInfo {
 	public void setAttorneyNoRadioBtn() {
 		this.attorneyNoRadioBtn.click();
 	}
-
 
 }

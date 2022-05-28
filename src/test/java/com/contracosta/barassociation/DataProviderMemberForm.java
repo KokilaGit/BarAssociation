@@ -13,36 +13,53 @@ import org.testng.annotations.DataProvider;
 
 public class DataProviderMemberForm {
 	public static final String loginDataSheetName = "Login";
-	public static final String  memberInfoSheet = "MemberContact";
+	public static final String memberInfoSheet = "MemberContact";
+	public static final String membershipSheet = "MembershipCategories";
+	public static final String languageCategoriesSheet = "LanguageCategories";
+	public static final String paymentSheet = "PaymentCategory";
 	public static final String excelTestDataFile = new File(System.getProperty("user.dir")).getAbsolutePath()
 			+ "/src/test/resources/TestData.xlsx";
 
 	@DataProvider(name = "create")
 	public Object[][] dataset() {
-		/*
-		 * Object[][]dataset = new Object[1][2]; dataset[0][0] =
-		 * "itodadmin19@intellinx.com"; dataset[0][1] = "itoddev96"; return dataset;
-		 * 
-		 * return new Object[][] { { "itodadmin19@intellinx.com", "itoddev96" } };
-		 */
+
 		return loadDataFromExcel(loginDataSheetName);
 
 	}
+
 	@DataProvider(name = "memberInfo")
-	public Object[][]memberData(){
-		
+	public Object[][] memberData() {
+
 		return loadDataFromExcel(memberInfoSheet);
 	}
 
-	public static Object[][] loadDataFromExcel(String sheetName) {
+	@DataProvider(name = "membership")
+	public Object[][] membershipData() {
 
+		return loadDataFromExcel(membershipSheet);
+	}
+
+	@DataProvider(name = "language")
+	public Object[][] languageData() {
+
+		return loadDataFromExcel(languageCategoriesSheet);
+	}
+
+	@DataProvider(name = "payment")
+	public Object[][] paymentData() {
+
+		return loadDataFromExcel(paymentSheet);
+	}
+
+	public static Object[][] loadDataFromExcel(String sheetName) {
+		// This method reads data from excel sheet and returns data hash map.
 		Workbook book;
 		Sheet sheet;
-		// Object[][] dataset = null;
 		Object[][] dataHash = null;
-		// Read test data from Excel // Create an object of File class to open xlsxfile
 
+		// Create an object of File class to open xlsxfile
 		File file = new File(excelTestDataFile);
+
 		try {
 
 			// Create an object of FileInputStream class to read excel file
@@ -50,16 +67,11 @@ public class DataProviderMemberForm {
 			FileInputStream inputStream = new FileInputStream(file);
 
 			book = WorkbookFactory.create(inputStream);
-
 			sheet = book.getSheet(sheetName);
-
-			// dataset = new
-			// Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
 			dataHash = new Object[sheet.getLastRowNum()][1];
 			for (int i = 0; i < sheet.getLastRowNum(); i++) {
 				HashMap<String, String> data = new HashMap<String, String>();
 				for (int j = 0; j < sheet.getRow(0).getLastCellNum(); j++) {
-					// dataset[i][j] = sheet.getRow(i + 1).getCell(j).toString();
 					data.put(sheet.getRow(0).getCell(j).toString(), sheet.getRow(i + 1).getCell(j).toString());
 
 				}

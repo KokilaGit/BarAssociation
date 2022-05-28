@@ -5,9 +5,13 @@
     <classes>
       <class name="com.contracosta.barassociation.MemberForm">
         <methods>
-          <include name="contactForm" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="closeUp"/>
+          <include name="beforeReport"/>
+          <include name="languageCategory" invocation-numbers="0"/>
+          <include name="memberCategory" invocation-numbers="0"/>
+          <include name="afterReport"/>
+          <include name="paymentCategory" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.contracosta.barassociation.MemberForm -->
     </classes>
